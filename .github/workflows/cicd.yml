@@ -62,4 +62,4 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
       env:
-        DATABASE_URL: sqlite::memory:
+        DATABASE_URL: 'sqlite::memory:'
