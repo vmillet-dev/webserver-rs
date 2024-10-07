@@ -62,4 +62,9 @@ jobs:
           ${{ runner.os }}-cargo-
     - name: Run tests
       run: cargo test --verbose
+      env:
+        DATABASE_URL: postgres://postgres:password@localhost/rust_web_server
+        JWT_SECRET: your_secure_jwt_secret_here
+        HOST: 127.0.0.1
+        PORT: 8080
 
